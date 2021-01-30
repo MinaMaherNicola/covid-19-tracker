@@ -1,0 +1,30 @@
+.global-stats {
+  width: 100%;
+  margin-top: 7rem;
+  padding: 2rem;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.4);
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s;
+}
+.global-stats h1 {
+  font-weight: 100;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.global-stats .lead {
+  font-size: 2rem;
+}
+.global-stats .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.global-stats:hover {
+  border-bottom: 3px solid #706c61;
+  box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-1rem);
+}
+
+/*# sourceMappingURL=GlobalStats.css.map */

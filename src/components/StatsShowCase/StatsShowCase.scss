@@ -1,0 +1,11 @@
+.show-case {
+  height: 5rem;
+  // border: 1px solid rgb(36, 36, 36);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  span {
+    font-weight: 600;
+  }
+}
