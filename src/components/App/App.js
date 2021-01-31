@@ -45,6 +45,7 @@ class App extends React.Component {
         if (country.country.toLowerCase().includes(searchTerm.toLowerCase())) {
           return country;
         }
+        return undefined;
       });
       searchedCounts = searchedCounts.filter((country) => {
         return country !== undefined || null;
