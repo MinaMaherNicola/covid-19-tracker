@@ -1,0 +1,22 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #333;
+  box-shadow: 0rem 0.3rem 2rem rgba(0, 0, 0, 0.4);
+}
+.flex-container a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.flex-container a:hover {
+  color: #706c61;
+}
+.flex-container .text a {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=InfoNav.css.map */

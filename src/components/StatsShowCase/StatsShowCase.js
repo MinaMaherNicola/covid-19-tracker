@@ -6,9 +6,9 @@ const StatsShowCase = (props) => {
     <div className="show-case">
       <p>
         <span>{props.category}</span>
-        {props.numbers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+        {/* {props.numbers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} */}
+        {props.numbers}
       </p>
-      {/* {props.numbers} */}
     </div>
   );
 };

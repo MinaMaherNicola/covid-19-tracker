@@ -13,15 +13,22 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #333;
   color: #ffffff;
+  padding-bottom: 10rem;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
   margin-top: 5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 2rem;
 }
 
 /*# sourceMappingURL=general.css.map */
