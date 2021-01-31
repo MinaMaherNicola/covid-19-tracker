@@ -5,7 +5,11 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        <input type="text" placeholder="Search by Country"></input>
+        <input
+          type="text"
+          onChange={this.props.searchChange}
+          placeholder="Search by Country"
+        ></input>
       </div>
     );
   }

@@ -8,7 +8,7 @@ import InfoNav from '../InfoNav/InfoNav';
 
 class App extends React.Component {
   state = { data: [] };
-  componentDidMount = async () => {
+  fetchData = async () => {
     const stats = await covid19.get('/countries');
     const data = stats.data.map(
       ({
@@ -33,6 +33,27 @@ class App extends React.Component {
     );
     this.setState({ data });
   };
+  componentDidMount = () => {
+    this.fetchData();
+  };
+
+  searchOnChange = (e) => {
+    let searchTerm = e.target.value;
+
+    if (searchTerm !== '') {
+      let searchedCounts = this.state.data.map((country) => {
+        if (country.country.toLowerCase().includes(searchTerm.toLowerCase())) {
+          return country;
+        }
+      });
+      searchedCounts = searchedCounts.filter((country) => {
+        return country !== undefined || null;
+      });
+      this.setState({ data: searchedCounts });
+    } else {
+      this.fetchData();
+    }
+  };
   render() {
     const headers = this.state.data.map((country, index) => {
       return (
@@ -53,7 +74,7 @@ class App extends React.Component {
         <InfoNav></InfoNav>
         <div className="container">
           <nav>
-            <SearchBar />
+            <SearchBar searchChange={this.searchOnChange} />
           </nav>
           <section className="grid-container">{headers}</section>
         </div>
@@ -63,4 +84,3 @@ class App extends React.Component {
 }
 
 export default App;
-// active, cases, country, deaths, recovered, today cases, today deaths
