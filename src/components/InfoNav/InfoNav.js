@@ -9,10 +9,10 @@ const InfoNav = () => {
         <p>
           Created by: Mina Nicola
           <a href="https://www.linkedin.com/in/minamahernicola/">
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </a>
           <a href="https://github.com/MinaMaherNicola">
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </a>
         </p>
       </div>
