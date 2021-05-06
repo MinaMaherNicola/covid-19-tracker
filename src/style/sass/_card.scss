@@ -1,0 +1,23 @@
+.card {
+  font-size: 1.6rem;
+  width: 44rem;
+  height: 35rem;
+  background-color: $color-dark-secondary;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: 1.5rem;
+
+  &__header {
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $color-gold-bright;
+  }
+
+  &__statistics {
+    margin-top: 2rem;
+    & > * {
+      font-size: 2rem;
+      margin: 1rem 0rem;
+    }
+  }
+}

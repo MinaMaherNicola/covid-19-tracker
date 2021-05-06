@@ -1,0 +1,40 @@
+.search {
+  padding-bottom: $default-space;
+  border-bottom: 0.1rem solid $color-gold-bright;
+  &__header {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &__input {
+    font-family: 'Roboto', sans-serif;
+    color: $color-white;
+    background-color: $color-dark-secondary;
+    margin-top: $default-space / 5;
+    border: none;
+    outline: none;
+    padding: 2rem 1.6rem;
+    width: 32.7rem;
+    height: 4.8rem;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    border-bottom: 0.2rem transparent solid;
+    transition: border-bottom 0.5s;
+  }
+
+  &__input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $color-white;
+    opacity: 0.8;
+  }
+
+  &__input:focus {
+    border-bottom: 0.2rem $color-blue-dark solid;
+  }
+
+  svg {
+    margin-left: -3.5rem;
+  }
+}
