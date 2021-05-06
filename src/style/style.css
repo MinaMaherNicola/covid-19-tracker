@@ -109,6 +109,13 @@ ul {
 .card__statistics > * {
   font-size: 2rem;
   margin: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.card__statistics > *:not(:last-child) {
+  border-bottom: 1px solid #222831;
 }
 
 .card-list {

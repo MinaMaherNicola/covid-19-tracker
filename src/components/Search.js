@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Search = () => {
+  const [value, setValue] = useState('');
+  console.log(value);
+
   return (
     <div className="search">
       <h1 className="search__header">covid-19 live statistics</h1>
@@ -8,6 +11,8 @@ const Search = () => {
         className="search__input"
         type="text"
         placeholder="SEARCH BY COUNTRY NAME"
+        value={value}
+        onChange={e => setValue(e.target.value)}
       />
       <svg
         xmlns="http://www.w3.org/2000/svg"
