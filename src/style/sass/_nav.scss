@@ -1,0 +1,29 @@
+.navbar {
+  background-color: $color-dark-secondary;
+  padding: 2rem;
+  color: $color-white;
+
+  .container {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-weight: 400;
+  }
+
+  &__links {
+    &-item {
+      display: inline-block;
+      &-link {
+        margin-left: 1rem;
+        &-img {
+          width: 2.4rem;
+        }
+      }
+    }
+  }
+}
