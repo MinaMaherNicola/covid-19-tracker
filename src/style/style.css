@@ -73,7 +73,7 @@ ul {
   border-radius: 0.4rem;
   box-shadow: 0.2rem 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
   border-bottom: 0.2rem transparent solid;
-  transition: border-bottom 0.5s;
+  transition: all 0.5s ease;
 }
 .search__input::placeholder {
   font-family: "Roboto", sans-serif;
@@ -84,6 +84,7 @@ ul {
 }
 .search__input:focus {
   border-bottom: 0.2rem #30475e solid;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 .search svg {
   margin-left: -3.5rem;
@@ -97,6 +98,7 @@ ul {
   border-radius: 0.4rem;
   box-shadow: 0.2rem 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
   padding: 1.5rem;
+  transition: all 0.5s ease;
 }
 .card__header {
   font-weight: 400;
@@ -116,6 +118,11 @@ ul {
 }
 .card__statistics > *:not(:last-child) {
   border-bottom: 1px solid #222831;
+}
+
+.card:hover {
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-1rem);
 }
 
 .card-list {
