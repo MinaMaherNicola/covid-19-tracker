@@ -9,9 +9,27 @@
   transition: all 0.5s ease;
 
   &__header {
-    font-weight: 400;
-    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid $color-gold-bright;
+    &__heading {
+      font-weight: 400;
+    }
+    &__link {
+      display: inline-block;
+      background-color: $color-gold-bright;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      color: #000;
+      box-shadow: $box-shadow;
+      transition: all 0.5s ease;
+    }
+    &__link:hover {
+      background-color: darken($color-gold-bright, 10%);
+      box-shadow: $box-shadow-hover;
+    }
   }
 
   &__statistics {

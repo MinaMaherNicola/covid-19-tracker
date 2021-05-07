@@ -1,9 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Icon from './Icon';
 
 const Card = props => {
   return (
     <div className="card">
-      <h1 className="card__header">{props.headline}</h1>
+      <div className="card__header">
+        <h1 className="card__header__heading">{props.headline}</h1>
+        <Link className="card__header__link" to={`/${props.headline}`}>
+          <Icon icon="arrow-right" />
+        </Link>
+      </div>
       <ul className="card__statistics">
         <li className="card__statistics-total">
           Total Cases: <span className="numbers">{props.totalCases}</span>

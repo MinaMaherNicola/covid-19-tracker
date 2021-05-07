@@ -25,6 +25,11 @@ ul {
   margin: 0 auto;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .navbar {
   background-color: #30475e;
   padding: 2rem;
@@ -101,9 +106,27 @@ ul {
   transition: all 0.5s ease;
 }
 .card__header {
-  font-weight: 400;
-  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid #f2a365;
+}
+.card__header__heading {
+  font-weight: 400;
+}
+.card__header__link {
+  display: inline-block;
+  background-color: #f2a365;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: #000;
+  box-shadow: 0.2rem 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
+  transition: all 0.5s ease;
+}
+.card__header__link:hover {
+  background-color: #ee8736;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 .card__statistics {
   margin-top: 2rem;
