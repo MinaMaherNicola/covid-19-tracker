@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Icon from './Icon';
 
-const Search = () => {
-  const [value, setValue] = useState('');
-
+const Search = ({ onInputChange }) => {
   return (
     <div className="search">
       <h1 className="search__header">covid-19 live statistics</h1>
@@ -11,8 +9,11 @@ const Search = () => {
         className="search__input"
         type="text"
         placeholder="SEARCH BY COUNTRY NAME"
-        value={value}
-        onChange={e => setValue(e.target.value)}
+        onChange={e => {
+          setTimeout(() => {
+            onInputChange(e.target.value);
+          }, 2000);
+        }}
       />
       <Icon icon="search" />
     </div>
@@ -20,3 +21,16 @@ const Search = () => {
 };
 
 export default Search;
+
+// return (
+//   <Card
+//     headline={country.country}
+//     totalCases={displayNumber(country.cases)}
+//     activeCases={displayNumber(country.active)}
+//     totalDeaths={displayNumber(country.deaths)}
+//     totalRecovered={displayNumber(country.recovered)}
+//     todayCases={displayNumber(country.todayCases)}
+//     todayDeaths={displayNumber(country.todayDeaths)}
+//     key={country.country}
+//   />
+// );

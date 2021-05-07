@@ -1,17 +1,22 @@
 import React from 'react';
+import { Router, Route } from 'react-router-dom';
+
 import Navbar from './Navbar';
-import Search from './Search';
 import Footer from './Footer';
 import CardList from './CardList';
+import history from './../history';
 
 const App = () => {
   return (
     <div className="app-container">
-      <Navbar />
-      <div className="container">
-        <Search />
-        <CardList />
-      </div>
+      <Router history={history}>
+        <Navbar />
+        <div className="container">
+          <Route path="/" exact>
+            <CardList />
+          </Route>
+        </div>
+      </Router>
       <Footer />
     </div>
   );

@@ -1,8 +1,10 @@
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: $color-blue-dark;
-  padding: 2rem;
   color: $color-white;
-  margin-top: $default-space;
+  padding: 2rem 0;
   .container {
     max-width: 1366px;
     margin: auto;
