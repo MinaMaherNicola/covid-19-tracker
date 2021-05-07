@@ -21,16 +21,3 @@ const Search = ({ onInputChange }) => {
 };
 
 export default Search;
-
-// return (
-//   <Card
-//     headline={country.country}
-//     totalCases={displayNumber(country.cases)}
-//     activeCases={displayNumber(country.active)}
-//     totalDeaths={displayNumber(country.deaths)}
-//     totalRecovered={displayNumber(country.recovered)}
-//     todayCases={displayNumber(country.todayCases)}
-//     todayDeaths={displayNumber(country.todayDeaths)}
-//     key={country.country}
-//   />
-// );

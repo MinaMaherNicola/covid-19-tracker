@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import CardList from './CardList';
 import history from './../history';
+import Country from './Country';
 
 const App = () => {
   return (
@@ -12,9 +13,8 @@ const App = () => {
       <Router history={history}>
         <Navbar />
         <div className="container">
-          <Route path="/" exact>
-            <CardList />
-          </Route>
+          <Route path="/" exact component={CardList} />
+          <Route path="/:country" exact component={Country} />
         </div>
       </Router>
       <Footer />
