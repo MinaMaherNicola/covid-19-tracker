@@ -16,7 +16,9 @@ class CardList extends React.Component {
     // eslint-disable-next-line array-callback-return
     return countries.map(country => {
       if (this.state.term !== '') {
-        if (country.country.toLowerCase() === this.state.term.toLowerCase()) {
+        if (
+          country.country.toLowerCase().includes(this.state.term.toLowerCase())
+        ) {
           return (
             <Card
               headline={country.country}

@@ -1,11 +1,14 @@
 import React from 'react';
 import Icon from './Icon';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
-        <h1 className="navbar__logo">Covid-19 Statistics</h1>
+        <h1 className="navbar__logo">
+          <Link to="/">Covid-19 Statistics</Link>
+        </h1>
         <ul className="navbar__links">
           <li className="navbar__links-item">
             <a
