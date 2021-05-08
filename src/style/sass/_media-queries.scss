@@ -8,6 +8,11 @@
     height: 100%;
   }
 
+  .card:hover {
+    box-shadow: $box-shadow;
+    transform: translateY(0rem);
+  }
+
   .container {
     padding: 1.5rem;
   }
