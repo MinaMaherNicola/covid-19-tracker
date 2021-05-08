@@ -1,0 +1,42 @@
+@media screen and (max-width: 1400px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .search {
+    &__header {
+      display: none;
+    }
+    &__input {
+      width: 100%;
+    }
+  }
+
+  .navbar {
+    text-align: center;
+    .container {
+      display: block;
+    }
+
+    &__logo {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

@@ -2,7 +2,6 @@ import React from 'react';
 import { Router, Route } from 'react-router-dom';
 
 import Navbar from './Navbar';
-import Footer from './Footer';
 import CardList from './CardList';
 import history from './../history';
 import Country from './Country';
@@ -17,7 +16,7 @@ const App = () => {
           <Route path="/:country" exact component={Country} />
         </div>
       </Router>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

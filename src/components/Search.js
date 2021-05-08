@@ -12,10 +12,10 @@ const Search = ({ onInputChange }) => {
         onChange={e => {
           setTimeout(() => {
             onInputChange(e.target.value);
-          }, 1000);
+          }, 500);
         }}
       />
-      <Icon icon="search" />
+      <Icon className="icon" icon="search" />
     </div>
   );
 };

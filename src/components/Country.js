@@ -18,7 +18,8 @@ class Country extends React.Component {
             {this.props.country.country}
           </h1>
           <Link className="country__header__link" to="/">
-            <Icon icon="arrow-right" />
+            {/* <Icon icon="arrow-right" /> */}
+            Back
           </Link>
         </div>
         <ul className="country__statistics">
