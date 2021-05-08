@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchCountry } from './../actions';
-import Icon from './Icon';
 import { displayNumber } from '../util/displayNumber';
 
 class Country extends React.Component {
@@ -18,7 +17,6 @@ class Country extends React.Component {
             {this.props.country.country}
           </h1>
           <Link className="country__header__link" to="/">
-            {/* <Icon icon="arrow-right" /> */}
             Back
           </Link>
         </div>
